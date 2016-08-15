@@ -1,5 +1,7 @@
 package ru.kourilenko;
 
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
 //        byte a [] = {67};
@@ -12,8 +14,22 @@ public class Main {
 //        System.out.println(d.charAt(2));
 //        System.out.println(d.getBytes()[0]);
 //        System.out.println("аАа".equalsIgnoreCase("a"));
-        String s [] = {"a", "b"};
-        System.out.println(s);
+
+        
+
+        String text = "Идея метода: шаг сортировки состоит в проходе снизу вверх по массиву.";
+
+        String [] b= text.split(" ");
+        StringUtil.bubbleSort(b);
+
+        for (int i = 0; i< b.length; i++){
+            System.out.println(b[i]);
+        }
+
+
 
     }
+
+
+
 }
